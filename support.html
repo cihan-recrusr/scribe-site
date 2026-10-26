@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support</title>
+<meta name="description" content="Support for the Scribe macOS meeting recorder: getting started, FAQ and contact.">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="brand" href="index.html"><img src="icon.png" alt="" width="36" height="36"><span>Scribe</span></a>
+<nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+</div></header>
+<main class="wrap">
+<h1>Scribe: Meeting Notes Support</h1>
+<p>Scribe: Meeting Notes records your meetings &mdash; your microphone and the other side playing through your Mac &mdash; and turns them into a transcript labelled <strong>Me</strong> and <strong>Others</strong>, plus a summary with topics, decisions and action items.</p>
+<p><strong>Contact:</strong> <a href="mailto:cnbabatas@gmail.com">cnbabatas@gmail.com</a> &mdash; please include your macOS version and the app version (Settings shows it).</p>
+<p class="lang-note"><a href="#destek-türkçe">Türkçe bölüm aşağıda.</a></p>
+
+<h2>Getting started</h2>
+<ol>
+<li><strong>Add your OpenAI API key.</strong> Open Settings (&#8984;,), paste a key from <a href="https://platform.openai.com/api-keys">https://platform.openai.com/api-keys</a> and press Save. The key is kept in your macOS Keychain. Usage is billed to your OpenAI account.</li>
+<li><strong>Start a recording</strong> from the menu bar icon or the main window.</li>
+<li><strong>Allow the permissions</strong> macOS asks for the first time: Microphone, and System Audio Recording (so the other side of the call is captured).</li>
+<li><strong>Stop</strong>, then press <strong>Process</strong> on the recording. The first time, the app asks whether it may send recordings to OpenAI; nothing is uploaded until you allow it.</li>
+</ol>
+
+<h2>Frequently asked questions</h2>
+
+<h3>Do I need an OpenAI account?</h3>
+<p>Yes, to transcribe and summarize. You can record without a key; processing needs one. The app has no subscription of its own &mdash; you pay OpenAI directly for what you use.</p>
+
+<h3>The other side of my call is silent.</h3>
+<ul>
+<li>Check System Settings &rarr; Privacy &amp; Security &rarr; Screen &amp; System Audio Recording, and make sure the app is allowed under <em>System Audio Recording Only</em>.</li>
+<li>Turn off <strong>Echo cancellation</strong> in Settings. While it is on, macOS does not deliver system audio to the app.</li>
+</ul>
+
+<h3>My own voice is very quiet.</h3>
+<p>Some headsets arrive with a very low input level. The app raises a too-low input level when a recording starts and tells you when it did. You can also adjust it in System Settings &rarr; Sound &rarr; Input.</p>
+
+<h3>Me and Others are mixed up.</h3>
+<p>Use headphones. Without them, the far side plays out of your speakers and is picked up by your microphone too.</p>
+
+<h3>Where are my recordings?</h3>
+<p>Inside the app's own container on your Mac. They never leave your Mac unless you process them. Delete a recording from its detail view; deleting the app removes them all.</p>
+
+<h3>How do I stop sending recordings to OpenAI?</h3>
+<p>Leave <em>Process recordings automatically</em> off, use <em>Ask Again Before Sending</em> in Settings to withdraw permission, or remove your API key.</p>
+
+<h3>Is recording people legal?</h3>
+<p>That depends on where you and the other participants are. Some places require everyone's consent. Make sure you are allowed to record before you do.</p>
+
+<h2>Privacy</h2>
+<p>See the <a href="privacy.html">Privacy Policy</a>. In short: the developer collects nothing; recordings go only to OpenAI, only with your key and only after you allow it.</p>
+
+<hr>
+
+<h1 id="destek-türkçe" lang="tr">Destek (Türkçe)</h1>
+<div lang="tr">
+<p><strong>İletişim:</strong> <a href="mailto:cnbabatas@gmail.com">cnbabatas@gmail.com</a> &mdash; lütfen macOS sürümünüzü ve uygulama sürümünü (Ayarlar'da görünür) ekleyin.</p>
+<p><strong>Başlarken:</strong> Ayarlar'a (&#8984;,) OpenAI API anahtarınızı girin, menü çubuğundan kaydı başlatın, macOS'un istediği Mikrofon ve Sistem Sesi Kaydı izinlerini verin, kaydı durdurup <strong>Process</strong>'e basın. İlk seferde uygulama OpenAI'ye gönderim için izninizi ister.</p>
+<p><strong>Karşı taraf sessiz kaydediliyor:</strong> Sistem Ayarları &rarr; Gizlilik ve Güvenlik &rarr; Ekran ve Sistem Sesi Kaydı'nda uygulamaya izin verin ve Ayarlar'daki <em>Echo cancellation</em>'ı kapatın.</p>
+<p><strong>Me ve Others karışıyor:</strong> Kulaklık kullanın.</p>
+<p>Ayrıntılar için yukarıdaki İngilizce SSS'ye ve <a href="privacy.html">Gizlilik Politikası</a>'na bakın.</p>
+</div>
+</main>
+<footer class="site"><div class="wrap">
+<a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a>
+</div></footer>
+</body>
+</html>
